@@ -93,17 +93,24 @@ body {
 }
 
 .logo {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    font-size: 1.3rem;
-    color: white; 
-    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
 }
 
-.logo span { 
-    color: var(--gold-light); 
+.logo img {
+    height: 45px; /* Ajusta la altura deseada para tu barra de navegación */
+    width: auto;  /* Mantiene la proporción perfecta sin deformar */
+     border-radius: 50%;      /* Hace la imagen completamente redonda */
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
 }
 
+.logo img:hover {
+    transform: scale(1.03); /* Ligera animación sutil */
+}
+
+/* Menú Desplegable Móvil */
 /* Menú Desplegable Móvil */
 .nav-menu {
     position: fixed;
@@ -139,14 +146,15 @@ body {
 }
 
 .nav-menu a:hover { 
-    color: var(--gold-light); 
+    color: var(--coffee); 
+    background-color: var(--gold-light);
 }
 
 /* Botón Hamburguesa */
 .hamburger-btn {
     background: none;
     border: none;
-    color: white;
+    color: var(--bg-negro);
     cursor: pointer;
     display: block;
     z-index: 2100;
@@ -163,49 +171,20 @@ body {
     padding: 10px 25px;
     border-radius: 20px;
     font-weight: 600;
-}
-
-/* Header de Escritorio Viejo (Fallback u oculto en móvil) */
-.desktop-header {
-    display: none;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 20px 50px;
-    background: rgba(245, 241, 233, 0.8);
-    backdrop-filter: blur(10px);
-    z-index: 2000;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid rgba(197, 160, 89, 0.1);
-}
-
-.desktop-nav {
-    display: flex;
-    gap: 30px;
-}
-
-.desktop-nav a {
     text-decoration: none;
-    color: var(--coffee);
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: color 0.3s;
 }
 
-.desktop-nav a:hover {
-    color: var(--gold-primary);
-}
-
+/* Header CTA (Convertido a enlace <a>) */
 .header-cta {
     background: var(--coffee);
     color: white;
-    border: none;
     padding: 10px 25px;
     border-radius: 25px;
     font-weight: 600;
     cursor: pointer;
     transition: transform 0.3s;
+    text-decoration: none; /* Elimina la línea de subrayado */
+    display: inline-block;
 }
 
 .header-cta:hover {
@@ -267,7 +246,6 @@ body {
     font-size: 14px;
     cursor: pointer;
 }
-
 
 /* ==========================================================================
    3. SECCIONES DE CONTENIDO (MÓVIL FIRST)
@@ -410,6 +388,8 @@ h1 span {
     cursor: pointer;
     transition: all 0.3s ease;
     margin-top: 10px;
+    text-decoration: none; 
+    display: inline-block;
 }
 
 .about-btn:hover {
@@ -688,7 +668,7 @@ h1 span {
 }
 
 .holistic-pillars {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(234, 230, 230, 0.551);
     border: 1px solid rgba(241, 213, 146, 0.15);
     padding: 40px;
     border-radius: 30px;
@@ -715,6 +695,7 @@ h1 span {
 }
 
 .pillars-list li span {
+    color: var(--coffee);
     font-size: 1.05rem;
     font-weight: 500;
     letter-spacing: 0.5px;
@@ -1040,6 +1021,9 @@ details p {
     font-weight: 600;
     cursor: pointer;
     transition: transform 0.3s;
+    text-decoration: none;  /* Elimina el subrayado */
+    display: inline-block;  /* Asegura el comportamiento de botón */
+    text-align: center;
 }
 
 .contact-main-btn:hover {
@@ -1686,4 +1670,275 @@ details p {
     .philosophy-text {
         font-size: 1.45rem; /* Un tamaño más imponente en pantallas grandes */
     }
+}
+
+/* --- SECCIÓN MI FORMACIÓN --- */
+.education-section {
+    padding: 90px 20px;
+    background-color: var(--bg-crema, #fcfbfa);
+}
+
+.education-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Columna Texto */
+.subtitle-gold {
+    display: block;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    color: var(--gold-primary, #c5a059);
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.education-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: var(--coffee, #4a3427);
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.education-title span {
+    color: var(--gold-primary, #c5a059);
+    font-style: italic;
+}
+
+.education-intro {
+    font-family: 'Inter', sans-serif;
+    color: var(--coffee, #66554b);
+    opacity: 0.85;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+/* Lista estilizada de formación */
+.education-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.edu-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px 20px;
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid rgba(197, 160, 89, 0.2);
+    box-shadow: 0 4px 15px rgba(74, 52, 39, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-item:hover {
+    transform: translateX(6px);
+    box-shadow: 0 8px 25px rgba(74, 52, 39, 0.07);
+}
+
+.edu-icon {
+    background: rgba(197, 160, 89, 0.12);
+    color: var(--gold-primary, #c5a059);
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.edu-icon i {
+    width: 22px;
+    height: 22px;
+}
+
+.edu-text h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    color: var(--coffee, #4a3427);
+    margin: 0 0 3px 0;
+    font-weight: 600;
+}
+
+.edu-text p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: var(--gold-primary, #c5a059);
+    margin: 0;
+    font-weight: 500;
+}
+
+.education-footer-note {
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--coffee, #66554b);
+    opacity: 0.7;
+    margin-top: 25px;
+}
+
+/* Columna Galería de Títulos (Visualmente superpuestos) */
+.education-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+}
+
+.cert-card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(74, 52, 39, 0.08);
+    border: 1px solid rgba(197, 160, 89, 0.25);
+    transition: transform 0.4s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-6px);
+}
+
+.cert-img-wrapper {
+    width: 100%;
+    height: 260px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #f5f3ef;
+}
+
+.cert-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cert-caption {
+    display: block;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9rem;
+    color: var(--coffee, #4a3427);
+    margin-top: 12px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+/* --- ADAPTACIÓN A ESCRITORIO --- */
+@media (min-width: 992px) {
+    .education-section {
+        padding: 120px 20px;
+    }
+
+    .education-container {
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 80px;
+    }
+
+    .education-title {
+        font-size: 3.4rem;
+    }
+
+    /* Efecto de escalonado/superposición elegante para los títulos en pantallas grandes */
+    .education-gallery {
+        display: block;
+        min-height: 520px;
+    }
+
+    .cert-card-1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 75%;
+        z-index: 1;
+    }
+
+    .cert-card-2 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 75%;
+        z-index: 2;
+    }
+
+    .cert-img-wrapper {
+        height: 280px;
+    }
+}
+
+/* --- ICONOS DE REDES SOCIALES --- */
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media p {
+    font-size: 0.95rem;
+    color: var(--coffee, #4a3427);
+    margin-bottom: 12px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Espacio entre cada icono */
+    align-items: center;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--bg-crema, #fcfbfa);
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    color: var(--gold-primary, #c5a059);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* Le da tamaño real al icono dentro del HTML */
+.social-icons a i,
+.social-icons a svg {
+    width: 20px !important;
+    height: 20px !important;
+    stroke-width: 2; /* Grosor de la línea */
+}
+
+/* Efecto Hover al pasar el cursor */
+.social-icons a:hover {
+    background-color: var(--gold-primary, #c5a059);
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(197, 160, 89, 0.3);
+}
+
+@media (max-width: 768px) {
+  /* Ocultamos el menú por defecto en pantallas pequeñas */
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Se despliega justo debajo del header */
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* Ajusta el fondo según tu diseño */
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Esta regla hace que el menú aparezca cuando tu script le agrega la clase 'is-active' */
+  .nav-list.is-active {
+    display: flex !important;
+  }
 }

@@ -6,41 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Holistic Mentoring | Josefina</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <!-- Google Fonts: Serif para títulos y Sans para cuerpo -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <!-- Iconos Lucide -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+
 </head>
 
 <body>
 
     <!-- Header Unificado (Móvil y Escritorio) -->
     <header class="main-header">
-        <div class="header-capsule">
-            <div class="logo">Medicina <span>Vibracional</span></div>
+     <div class="header-capsule">
+    <!-- Logo -->
+    <div class="logo">
+        <a href="#inicio">
+            <img src="img/logo.jpeg" alt="Medicina Vibracional - Josefina">
+        </a>
+    </div>
 
-            <!-- Menú de Navegación -->
-            <nav class="nav-menu" id="navMenu">
-                <a href="#">Inicio</a>
-                <a href="#">Servicios</a>
-                <a href="#">Nosotros</a>
-                <a href="#">Blog</a>
-                <a href="#contacto" class="mobile-only-cta">Contacto</a>
-            </nav>
+    <!-- Menú Desplegable Móvil -->
+    <nav class="nav-menu" id="navMenu">
+        <a href="#inicio">Inicio</a>
+        <a href="#acerca">Acerca de mí</a>
+        <a href="#formacion">Formación</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#beneficios">¿Por qué elegirme?</a>
+        <!-- Enlace a WhatsApp para móvil -->
+        <a href="https://wa.me/TU_NUMERO?text=Hola,%20quiero%20más%20información" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="mobile-only-cta">
+           Contacto
+        </a>
+    </nav>
 
-            <button class="header-cta desktop-only">Contacto</button>
+    <!-- Botón Contacto Escritorio -->
+    <a href="https://wa.me/TU_NUMERO?text=Hola,%20quiero%20más%20información" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="header-cta desktop-only">
+       Contacto
+    </a>
 
-            <!-- Botón Hamburguesa (Solo móvil) -->
-            <button class="hamburger-btn" id="hamburgerBtn">
-                <i data-lucide="menu" id="menuIcon"></i>
-            </button>
-        </div>
+    <!-- Botón Hamburguesa -->
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="Abrir menú">
+        <i data-lucide="menu" id="menuIcon"></i>
+    </button>
+</div>
     </header>
 
-    <section class="hero">
+    <section id="inicio" class="hero">
         <!-- Imagen de fondo optimizada -->
         <div class="philosophy-bg-cover">
             <img src="img/header.png" alt="Camino de transformación" class="hero-img">
@@ -50,8 +70,8 @@
 
         <div class="hero-content">
             <div class="philosophy-content">
-                 <span class="subtitle-gold">TODO CAMINO QUE TRANSFORMA </span>
-                <h1>requiere salir de la zona de <span>confort.</span></h1>
+                <!-- <span class="subtitle-gold">TODO CAMINO QUE TRANSFORMA </span> -->
+                <h1> Todo camino de trasnformación requiere salir de la zona de <span>confort.</span></h1>
                 <p class="hero-text">
                     Creo profundamente que no existe un único camino para todos. Por eso, cada acompañamiento es
                     diseñado de
@@ -60,7 +80,7 @@
                     equilibrada y
                     plena.
                 </p>
-                 <div class="philosophy-line"></div>
+                <div class="philosophy-line"></div>
 
             </div>
 
@@ -68,37 +88,59 @@
 
     </section>
 
+    <!-- Sección Mi Historia -->
+    <section id="#historia" class="my-story">
+        <div class="story-container">
+            <!-- Columna de Texto Principal -->
+            <div class="story-content">
+                <span class="subtitle">MI DIAGNÓSTICO FUE EL COMIENZO DE UNA RENACER</span>
+                <h2 class="story-title"> Cuando todo parecía <span>perdido</span>, elegí un camino diferente</h2>
 
-    <!-- Sección About -->
-    <section class="about">
-        <div class="about-container">
-
-
-            <!-- Columna de Texto -->
-            <div class="about-content">
-                <span class="subtitle">Acompaño desde la experiencia.</span>
-                <h2 class="about-title">Equilibrio Real para una Vida <span>Consciente</span></h2>
-                <p class="about-text">
-                    Soy<strong> Josefina </strong>, y estoy convencida de que el bienestar no es un destino, sino un
-                    camino diario. Mi misión es brindarte las herramientas necesarias para reconectar con tu esencia en
-                    un mundo cada vez más ruidoso.
+                <p class="story-highlight">
+                    El 19 de julio de 2019 recibí un diagnóstico que cambió por completo mi existencia:
+                    un cáncer de pulmón con un tumor que no podía ser operado. Sentí miedo, incertidumbre
+                    y muchas preguntas. Pero ese mismo día, sin saberlo, también comenzó el viaje más profundo
+                    y transformador de mi vida.
                 </p>
-                <p class="about-text">
-                    Mediante mi enfoque integral, donde cuerpo, emociones, pensamientos y energía están profundamente
-                    conectados, fusiono disciplinas como Bienestar Ontológico, Sanación Volitiva, Energía Escalar y Mesa
-                    Cuántica Energética, guiándote a liberar el estrés, recuperar tu claridad mental y vivir con un
-                    verdadero propósito.
+
+                <p class="story-paragraph">
+                    Mientras seguía el tratamiento indicado por los médicos, asumí un compromiso profundo conmigo misma.
+                    Me formé, aprendí, transformé hábitos, trabajé mis emociones, mis creencias y mi forma de vivir. Me
+                    abrí
+                    a nuevas herramientas que complementaron mi proceso y me enseñaron que el cuerpo necesita mucho más
+                    que un tratamiento físico. El *16 de diciembre de 2020*,
+                    los estudios confirmaron que el tumor había desaparecido. Hoy sigo completamente sana y dedico mi
+                    vida a acompañar a otras personas desde esa experiencia.
                 </p>
-                <button class="about-btn">Conoce más de nosotros</button>
+
+                <blockquote class="story-quote">
+                    "Nunca te identifiques con un diagnóstico. Sos mucho más que un resultado médico.
+                    Tu capacidad de creer, aprender, transformar hábitos y abrirte a nuevos caminos también
+                    forma parte de tu proceso."
+                </blockquote>
+
+                <p class="story-paragraph">
+                    Mi mayor aprendizaje fue descubrir que la fe también se fortalece cuando nos animamos a recorrer
+                    caminos nuevos. Por eso quiero invitarte a no identificarte
+                    con un diagnóstico ni permitir que otros definan tus límites. Confiá en vos, abrite a nuevas
+                    posibilidades y recordá que no tenés que atravesar este camino en soledad.
+                    Estoy acá para acompañarte, desde la experiencia y con todo mi cariño, para ayudarte a encontrar las
+                    herramientas que impulsen tu bienestar y tu transformación
+                </p>
+
+                <a href="https://api.whatsapp.com/send?phone=5493815165206&text=%C2%A1Hola!%20%C2%BFC%C3%B3mo%20est%C3%A1s%3F%20Me%20interesan%20mucho%20tus%20servicios%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20para%20saber%20si%20este%20proceso%20es%20el%20adecuado%20para%20lo%20que%20estoy%20buscando"
+                    class="story-btn">Quiero iniciar mi proceso</a>
             </div>
 
-            <!-- Columna de Imágenes -->
-            <div class="about-images">
-                <div class="img-wrapper main-img">
-                    <img src="img/about1.jpg" alt="Nuestra filosofía">
-                </div>
-                <div class="img-wrapper sub-img">
-                    <img src="img/about2.2.jpg" alt="Tu proceso">
+            <!-- Columna de Imagen Emocional/Retrato -->
+            <div class="story-image-box">
+                <div class="story-img-wrapper">
+                    <!-- Una foto tuya sonriendo de forma natural, en un entorno luminoso -->
+                    <img src="img/about2.2.3.jpg" alt="Mi proceso de sanación">
+                    <div class="story-badge">
+                        <span class="badge-years">6+</span>
+                        <span class="badge-text">Años de <br>Sanación Activa</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,21 +151,21 @@
         <div class="video-container">
             <!-- Columna Izquierda: Mensaje Invitación -->
             <div class="video-text-content">
-                <span class="subtitle">CONÉCTATE CON MI ESPACIO</span>
-                <h2 class="video-title">Te cuento mi propósito <span>en primera persona</span></h2>
+                <span class="subtitle">El camino que transformó mi vida</span>
+                <h2 class="video-title">Una invitación a conocer <span>lo quiero compartir</span></h2>
                 <p class="video-description">
-                    Te invito a tomarte un momento de pausa para mirar este video. Aquí te comparto desde el corazón
-                    cómo nació <strong>Medicina Vibracional</strong>, qué significa la Sanación Volitiva y cómo puedo
-                    acompañarte a restablecer tu equilibrio natural.
+                    Te invito a ver este video para conocer la propuesta que quiero compartir con vos,
+                    cómo nació <strong>Renacer el Sentir</strong>, y el propósito que dio vida al método de Sanación
+                    Volitiva.
                 </p>
                 <div class="video-features">
                     <div class="v-feature-item">
                         <i data-lucide="check-circle-2"></i>
-                        <span>Un enfoque cercano y sin prisas.</span>
+                        <span>Pequeñas decisiones, grandes cambios.</span>
                     </div>
                     <div class="v-feature-item">
                         <i data-lucide="check-circle-2"></i>
-                        <span>Espacio seguro para tu proceso.</span>
+                        <span>Conocé el poder de tu cuerpo.</span>
                     </div>
                 </div>
             </div>
@@ -141,75 +183,175 @@
         </div>
     </section>
 
-    <!-- Banner de Concientización -->
-    <section class="awareness-banner">
-        <div class="banner-content">
-            <i data-lucide="heart" class="banner-icon"></i>
-            <h2 class="banner-message">
-                Tu cuerpo se repara y recupera su equilibrio <span>bajo las condiciones adecuadas</span>.
-            </h2>
-            <p>Pequeños hábitos hoy construyen una vida plena mañana.</p>
-            <div class="banner-stats">
-                <div class="stat-item">
-                    <span class="stat-num">10min</span>
-                    <p>de silencio al día</p>
+
+
+
+
+
+
+
+
+    <!-- Sección About -->
+    <section id="acerca" class="about">
+        <div class="about-container">
+
+
+            <!-- Columna de Texto -->
+            <div class="about-content">
+                <span class="subtitle">La experiencia fortaleció mi formación..</span>
+                <h2 class="about-title">Tu bienestar merece un abordaje <span>integral</span></h2>
+                <p class="about-text">
+                    Soy<strong> Josefina </strong>,creo profundamente
+                    cada persona posee un enorme potencial de transformación cuando aprende a
+                    comprenderse y participar activamente de su propio bienestar. Por eso fusiono
+                    distintas disciplinas en las que me fui formando.
+                </p>
+                <p class="about-text">
+                    Mi propósito es acompañarte a recuperar la soberanía sobre tu biología,
+                    y compartirte herramientas de acuerdo con lo que estés atravesando,
+                    abordando de forma integral cuerpo, mente, emociones y energía.
+                    Acompañarte y transmitirte conocimientos y recursos que puedas
+                    aplicar durante toda tu vida para vivir con mayor conciencia, libertad y propósito.
+                </p>
+                <a href="https://wa.me/TU_NUMERO?text=Hola,%20me%20gustaría%20recibir%20más%20información"
+                    target="_blank" rel="noopener noreferrer" id="btnContacto" class="about-btn">
+                    Conoce más de mí
+                </a>
+            </div>
+
+            <!-- Columna de Imágenes -->
+            <div class="about-images">
+                <div class="img-wrapper main-img">
+                    <img src="img/about1.jpg" alt="Nuestra filosofía">
                 </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-num">100%</span>
-                    <p>consciencia vital</p>
+                <div class="img-wrapper sub-img">
+                    <img src="img/about2.2.jpg" alt="Tu proceso">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Mi Historia -->
-    <section class="my-story">
-        <div class="story-container">
-            <!-- Columna de Texto Principal -->
-            <div class="story-content">
-                <span class="subtitle">MI CAMINO DE REGRESO A LA VIDA</span>
-                <h2 class="story-title">Acompaño desde la <span>experiencia</span>, no desde la teoría</h2>
 
-                <p class="story-highlight">
-                    El 19 de julio de 2019 recibí un diagnóstico que cambió mi existencia: un cáncer de pulmón que no
-                    podía ser operado. Ese día sentí miedo e incertidumbre, pero también comenzó el viaje más profundo
-                    de mi vida.
+
+    <section id="filosofia" class="what-is-holistic">
+        <div class="holistic-container">
+            <div class="holistic-text">
+                <span class="subtitle gold-sub">LA MEDICINA TAMBIEN PUEDE COMPLEMENTARSE</span>
+                <h2 class="holistic-title">Somos un sistema perfectamente <span>conectado.</span></h2>
+
+                <p class="holistic-paragraph">
+                    La medicina convencional salva vidas y cumple un rol indispensable. Sin embargo, nuestra salud
+                    también
+                    está influenciada por el estrés, las emociones, los pensamientos, los hábitos y
+                    la manera en que vivimos. Cuando abordamos al ser humano como un todo, favorecemos
+                    un mayor equilibrio y participamos activamente en nuestro propio bienestar.
                 </p>
-
-                <p class="story-paragraph">
-                    Elegí realizar mi tratamiento médico convencional y, al mismo tiempo, abrirme a una mirada
-                    integrativa. Comencé a trabajar activamente mi mente, emociones, alimentación y espiritualidad
-                    mediante nutrición consciente, meditación y herramientas para regular mi sistema nervioso. El 16 de
-                    diciembre de 2020, ante el asombro médico, el tumor había desaparecido. Hoy, sigo sana.
+                <p class="holistic-paragraph">
+                    Sanar es mucho más que tratar una enfermedad: es recuperar la armonía entre todas las dimensiones
+                    que nos componen.
                 </p>
-
-                <blockquote class="story-quote">
-                    "Muchas veces el cuerpo necesita medicamentos, pero el alma también necesita esperanza. El sistema
-                    nervioso necesita seguridad y las emociones ser expresadas."
-                </blockquote>
-
-                <p class="story-paragraph">
-                    De ahí nació la <strong>Sanación Volitiva</strong>: la decisión consciente de participar activamente
-                    en nuestro proceso de bienestar. No te ofrezco teorías; te ofrezco un camino que primero recorrí en
-                    mí misma. Si estás atravesando una enfermedad, estrés o desconexión, recuerda: aunque nadie puede
-                    hacer el proceso por ti, tampoco tienes por qué hacerlo en soledad.
-                </p>
-
-                <a href="#contacto" class="story-btn">Quiero iniciar mi proceso</a>
             </div>
 
-            <!-- Columna de Imagen Emocional/Retrato -->
-            <div class="story-image-box">
-                <div class="story-img-wrapper">
-                    <!-- Una foto tuya sonriendo de forma natural, en un entorno luminoso -->
-                    <img src="img/about2.2.3.jpg" alt="Mi proceso de sanación">
-                    <div class="story-badge">
-                        <span class="badge-years">6+</span>
-                        <span class="badge-text">Años de <br>Sanación Activa</span>
+            <div class="holistic-pillars">
+                <ul class="pillars-list">
+                    <li>
+                        <i data-lucide="sparkles"></i>
+                        <span>La conciencia también forma parte del tratamiento.</span>
+                    </li>
+                    <li>
+                        <i data-lucide="leaf"></i>
+                        <span>Tu cuerpo necesita mucho más que medicación.</span>
+                    </li>
+                    <li>
+                        <i data-lucide="heart-handshake"></i>
+                        <span>La verdadera salud integra todas tus dimensiones.</span>
+                    </li>
+                    <li>
+                        <i data-lucide="user-check"></i>
+                        <span> La salud necesita un enfoque integral.</span>
+                    </li>
+                    <li>
+                        <i data-lucide="shield-check"></i>
+                        <span>No siempre depender sino aprender a lograr soberanía sobre nuestra propia biología</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sección Mi Formación -->
+    <section id="formacion" class="education-section">
+        <div class="education-container">
+
+            <!-- Columna Izquierda: Trayectoria y Formación -->
+            <div class="education-info">
+                <span class="subtitle-gold">RESPALDO Y PREPARACIÓN</span>
+                <h2 class="education-title">Mi <span>Formación</span></h2>
+                <p class="education-intro">
+                    Un camino de aprendizaje continuo y riguroso para ofrecerte un acompañamiento
+                    fundamentado, integral y de excelencia.
+                </p>
+
+                <ul class="education-list">
+                    <li class="edu-item">
+                        <div class="edu-icon"><i data-lucide="award"></i></div>
+                        <div class="edu-text">
+                            <h3>Postgrado en Bioneuroemoción®</h3>
+                            <p>Con Enric Corbera</p>
+                        </div>
+                    </li>
+
+                    <li class="edu-item">
+                        <div class="edu-icon"><i data-lucide="award"></i></div>
+                        <div class="edu-text">
+                            <h3>Mentoring Ontológico de Bienestar y Salud</h3>
+                        </div>
+                    </li>
+
+                    <li class="edu-item">
+                        <div class="edu-icon"><i data-lucide="award"></i></div>
+                        <div class="edu-text">
+                            <h3>Diplomado en Coeficiencia Inmunológica</h3>
+                        </div>
+                    </li>
+
+                    <li class="edu-item">
+                        <div class="edu-icon"><i data-lucide="award"></i></div>
+                        <div class="edu-text">
+                            <h3>Coeficiencia Bioenergética</h3>
+                        </div>
+                    </li>
+
+                    <li class="edu-item">
+                        <div class="edu-icon"><i data-lucide="award"></i></div>
+                        <div class="edu-text">
+                            <h3>Máster Coeficiencia Superior</h3>
+                            <p>Tito Figueroa</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <p class="education-footer-note">Entre otros estudios y especializaciones...</p>
+            </div>
+
+            <!-- Columna Derecha: Muestra de Títulos / Diplomas -->
+            <div class="education-gallery">
+                <div class="cert-card cert-card-1">
+                    <div class="cert-img-wrapper">
+                        <img src="img/certificado.png" alt="Certificado de Formación Josefina">
                     </div>
+                    <span class="cert-caption">Certificación Académica</span>
+                </div>
+
+                <div class="cert-card cert-card-2">
+                    <div class="cert-img-wrapper">
+                        <img src="img/certificado2.png" alt="Diplomado Josefina">
+                    </div>
+                    <span class="cert-caption">Especialización e Integración</span>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -224,11 +366,13 @@
 
         <div class="philosophy-container">
             <div class="philosophy-content">
-                <span class="subtitle-gold">LA VERDADERA SALUD</span>
-                <h2 class="philosophy-title">¿Qué significa sanar de una <span>forma integral</span>?</h2>
+                <span class="subtitle-gold">EL ARTE DE CONECTAR CON TU SER</span>
+                <h2 class="philosophy-title">¿Qué significa sanar de una <span>forma integral ?</span></h2>
                 <p class="philosophy-text">
-                    Sanar de forma integral no es callar un síntoma; es transformar la relación con tu cuerpo,
-                    tus emociones y tu vida para restaurar tu equilibrio desde la raíz.
+                    Sanar de forma integral es llevar a la coherencia con consciencia nuestro cuerpo, nuestras
+                    emociones, nuestros pensamientos y nuestra energia. Cuando vivimos con mayor equilibrio interno,
+                    favorecemos un estado de bienestar desde el cual el organismo puede recuperar su homeostasis y
+                    expresar mejor su capacidad natural de adaptación y reparación.
                 </p>
                 <div class="philosophy-line"></div>
             </div>
@@ -237,86 +381,42 @@
 
 
 
-    <section class="benefits">
+    <section id="beneficios" class="benefits">
         <div class="benefits-header">
-            <span class="subtitle">¿POR QUÉ ELEGIR ESTE CAMINO?</span>
-            <h2 class="benefits-main-title">Beneficios de las consultas <span>Volitiva</span></h2>
+            <span class="subtitle">¿Y si hoy comenzara tu Renacer el Sentir?</span>
+            <h2 class="benefits-main-title">Los beneficios de comenzar este <span>Camino</span></h2>
         </div>
 
         <div class="benefits-grid">
             <div class="benefit-card">
                 <span class="benefit-number">01</span>
-                <h3>Abordaje completo</h3>
-                <p>No tratamos síntomas aislados. Observamos el ser en su totalidad: emociones, energía, historia y
-                    entorno para comprender la raíz de cada situación.</p>
+                <h3>Recuperá tu equilibrio integral</h3>
+                <p>Aprendé a armonizar cuerpo, emociones, pensamientos y energía para sentirte con mayor bienestar.</p>
             </div>
 
             <div class="benefit-card">
                 <span class="benefit-number">02</span>
-                <h3>Sin efectos secundarios</h3>
-                <p>Las terapias naturales trabajan con la inteligencia innata del cuerpo, potenciando sus recursos
-                    propios de manera suave y progresiva.</p>
+                <h3>Reducí el estrés y recuperá la claridad</h3>
+                <p>Incorporá herramientas prácticas para regular el sistema nervioso y afrontar los desafíos con más
+                    calma.</p>
             </div>
 
             <div class="benefit-card">
                 <span class="benefit-number">03</span>
-                <h3>Autoconocimiento profundo</h3>
-                <p>Cada sesión es una invitación a comprenderte mejor. Desarrollas herramientas propias que te acompañan
-                    mucho más allá del espacio terapéutico.</p>
+                <h3>Convertite en protagonista de tu bienestar</h3>
+                <p>Descubrí recursos que fortalecen tu autonomía y te permiten acompañar activamente tu propio proceso.
+                </p>
             </div>
 
             <div class="benefit-card">
                 <span class="benefit-number">04</span>
-                <h3>Cambios duraderos</h3>
-                <p>Al trabajar desde la raíz emocional y energética, los cambios que se producen son sólidos y
-                    transformadores, no superficiales o temporales.</p>
+                <h3>Herramientas que quedan para toda la vida</h3>
+                <p>Llevate prácticas simples y profundas que podrás aplicar siempre que necesites recuperar tu
+                    equilibrio.</p>
             </div>
         </div>
     </section>
 
-    <section class="what-is-holistic">
-        <div class="holistic-container">
-            <div class="holistic-text">
-                <span class="subtitle gold-sub">EL ENFOQUE HOLÍSTICO</span>
-                <h2 class="holistic-title">¿Qué significa sanar de forma <span>integral</span>?</h2>
-
-                <p class="holistic-paragraph">
-                    La visión holística entiende al ser humano como una unidad indivisible donde cuerpo, mente,
-                    emociones y espíritu están profundamente interconectados. Una tensión en el hombro puede nacer de
-                    una emoción no expresada. Una idea que nos limita puede manifestarse en el cuerpo.
-                </p>
-                <p class="holistic-paragraph">
-                    Trabajar de forma holística significa escuchar todos los planos del ser, sin jerarquías, con respeto
-                    y con la certeza de que cuando uno sana, todo sana.
-                </p>
-            </div>
-
-            <div class="holistic-pillars">
-                <ul class="pillars-list">
-                    <li>
-                        <i data-lucide="sparkles"></i>
-                        <span>Integración cuerpo–mente–espíritu</span>
-                    </li>
-                    <li>
-                        <i data-lucide="leaf"></i>
-                        <span>Respeto por los procesos naturales</span>
-                    </li>
-                    <li>
-                        <i data-lucide="heart-handshake"></i>
-                        <span>Herramientas complementarias a la medicina convencional</span>
-                    </li>
-                    <li>
-                        <i data-lucide="user-check"></i>
-                        <span>El ser humano como protagonista de su sanación</span>
-                    </li>
-                    <li>
-                        <i data-lucide="shield-check"></i>
-                        <span>Vínculo terapéutico basado en la confianza</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
 
     <!-- Sección Servicios -->
     <!-- <section class="services">
@@ -354,7 +454,7 @@
 
 
     <!-- Sección Servicios con Imágenes -->
-    <section class="services">
+    <section id="servicios" class="services">
         <p class="section__label">Lo que ofrezco</p>
         <h2 class="section-title">Servicios para tu <em class="em">bienestar integral</em></h2>
         <p class="section__body">
@@ -367,7 +467,7 @@
             <!-- Tarjeta 1 -->
             <div class="service-card">
                 <div class="service-img-box">
-                    <img src="img/servicio1.png" alt="Mentoring Ontológico en Bienestar y Salud">
+                    <img src="img/servicio3.png" alt="Mentoring Ontológico en Bienestar y Salud">
                 </div>
                 <div class="service-card-info">
                     <h3>Mentoring Ontológico </h3>
@@ -394,12 +494,25 @@
             <!-- Tarjeta 3 -->
             <div class="service-card">
                 <div class="service-img-box">
-                    <img src="img/servicio3.png" alt="Sesiones de Energía Escalar">
+                    <img src="img/servicio4.jpg" alt="Sesiones de Energía Escalar">
                 </div>
                 <div class="service-card-info">
                     <h3>Método de Sanación Volitiva</h3>
                     <p>La Sanación Volitiva utiliza la voluntad consciente y un proceso personalizado
                         para regular tus emociones y darte herramientas duraderas de bienestar.</p>
+                </div>
+
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="service-card">
+                <div class="service-img-box">
+                    <img src="img/servicio1.png" alt="Sesiones de Energía Escalar">
+                </div>
+                <div class="service-card-info">
+                    <h3>Mesa cuántica energetica</h3>
+                    <p>La Mesa Cuántica es 100% a distancia. Armoniza chakras,
+                        libera bloqueos y limpia tu campo energético, enviándote la devolución por WhatsApp</p>
                 </div>
 
             </div>
@@ -417,33 +530,33 @@
 
                 <div class="accordion">
                     <details open>
-                        <summary>¿Qué es el enfoque integral de Josefina?</summary>
-                        <p>Es la unión de salud física, claridad mental y equilibrio emocional para lograr un bienestar
-                            duradero.</p>
+                        <summary>¿Puedo realizar el proceso si vivo en otra ciudad o país?</summary>
+                        <p>Sí. Todos los acompañamientos están disponibles online, permitiéndote participar desde donde
+                            te encuentres. Solo la energía escalar requiere presencialidad.</p>
                     </details>
 
                     <details>
-                        <summary>¿Necesito experiencia previa en meditación?</summary>
-                        <p>En absoluto. Nuestras sesiones están diseñadas tanto para principiantes que buscan su primer
-                            contacto como para practicantes avanzados.</p>
+                        <summary>¿El material que recibo durante el acompañamiento queda disponible para mí?</summary>
+                        <p>Sí. Las meditaciones, audios, ejercicios y demás herramientas que recibas quedarán para vos,
+                            para acompañarte cada vez que las necesites.</p>
                     </details>
 
                     <details>
-                        <summary>¿Cómo funcionan las mentorías personalizadas?</summary>
-                        <p>Son sesiones uno a uno donde trazamos un plan de hábitos, ejercicios mentales y seguimiento
-                            adaptado a tu ritmo de vida.</p>
+                        <summary>¿Cómo se definen los costos y las formas de pago?</summary>
+                        <p>Los valores dependen del servicio o proceso recomendado. Luego de la primera conversación,
+                            recibirás una propuesta personalizada y sus opciones de pago.</p>
                     </details>
 
                     <details>
-                        <summary>¿Las sesiones son presenciales o virtuales?</summary>
-                        <p>Ofrecemos ambas modalidades. Puedes disfrutar de la comodidad de tu hogar o visitarnos en
-                            nuestro espacio zen.</p>
+                        <summary> ¿Qué temas puedo trabajar con las diferentes propuestas?</summary>
+                        <p>Podés trabajar desde bloqueos personales, estrés o ansiedad hasta procesos de salud,
+                            relaciones, emociones o cualquier aspecto que necesites transformar.</p>
                     </details>
 
                     <details>
-                        <summary>¿Cuál es la duración de los programas?</summary>
-                        <p>Depende de tus objetivos. Tenemos talleres intensivos de un fin de semana hasta programas de
-                            acompañamiento de 3 meses.</p>
+                        <summary>¿Qué resultados puedo esperar del proceso?</summary>
+                        <p>Cada proceso es único. Según tu compromiso e implicación, podrás desarrollar nuevas
+                            herramientas y generar una transformación profunda hacia un mayor bienestar.</p>
                     </details>
                     <!-- 
                 <details>
@@ -466,7 +579,6 @@
         </div>
     </section>
 
-
     <section class="contact" id="contacto">
         <div class="contact-container">
             <div class="contact-image">
@@ -478,10 +590,11 @@
 
             <div class="contact-info">
                 <span class="subtitle">ESTOY AQUÍ PARA TI</span>
-                <h2 class="contact-title">Inicia tu <span>Camino</span></h2>
+                <h2 class="contact-title">¿Empezamos<span> juntos?</span></h2>
                 <p class="contact-description">
-                    ¿Sientes que es el momento de priorizar tu paz mental? Escríbenos. No importa en qué punto de tu
-                    viaje te encuentres, estamos listos para acompañarte.
+                    Si algo dentro tuyo te trajo hasta aquí, quizás sea el momento de escucharlo.
+                    Escribime y conversemos. No importa dónde estés hoy, siempre es posible dar el
+                    primer paso hacia un mayor bienestar.
                 </p>
 
                 <div class="contact-details">
@@ -489,7 +602,7 @@
                         <i data-lucide="mail"></i>
                         <div>
                             <p class="detail-label">Correo Electrónico</p>
-                            <p class="detail-value">hola@ejemplo.com</p>
+                            <p class="detail-value">totedaniel6@gmail.com</p>
                         </div>
                     </div>
                     <div class="detail-item">
@@ -504,13 +617,16 @@
                 <div class="social-media">
                     <p>Siguenos en nuestras redes:</p>
                     <div class="social-icons">
-                        <a href="#"><i data-lucide="instagram"></i></a>
-                        <a href="#"><i data-lucide="facebook"></i></a>
-                        <a href="#"><i data-lucide="linkedin"></i></a>
+                        <a href="https://www.instagram.com/renacer_elsentir/"   target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+
                     </div>
                 </div>
 
-                <button class="contact-main-btn">Enviar Mensaje vía WhatsApp</button>
+                <!-- <button class="contact-main-btn">Enviar Mensaje vía WhatsApp</button> -->
+                <a href="https://wa.me/TU_NUMERO?text=Hola,%20me%20gustaría%20recibir%20más%20información"
+                    target="_blank" rel="noopener noreferrer" class="contact-main-btn">
+                    Enviar Mensaje vía WhatsApp
+                </a>
             </div>
         </div>
     </section>
@@ -529,17 +645,24 @@
     </footer>
 
     <!-- WhatsApp -->
-    <a href="#" class="whatsapp-btn">
+    <a href="https://api.whatsapp.com/send?phone=5493815165206&text=%C2%A1Hola!%20%C2%BFC%C3%B3mo%20est%C3%A1s%3F%20Me%20interesan%20mucho%20tus%20servicios%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20para%20saber%20si%20este%20proceso%20es%20el%20adecuado%20para%20lo%20que%20estoy%20buscando"
+        class="whatsapp-btn">
         <i data-lucide="message-circle"></i>
     </a>
 
 
-    <!-- 1. Primero la librería -->
+
+
+    <!-- Carga de la librería Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-
+    <!-- Script de inicialización OBLIGATORIO -->
+    <script>
+        lucide.createIcons();
+    </script>
 
     <script src="script.js"></script>
+
 </body>
 
 </html>
