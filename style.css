@@ -254,7 +254,7 @@ body {
 /* --- HERO SECTION --- */
 .hero {
     position: relative;
-    height: 20vh;
+    height: 40vh;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -282,10 +282,12 @@ body {
 
 .hero-content {
     position: relative;
+    margin: auto;
     text-align: center;
     padding: 20px;
     z-index: 10;
 }
+
 
 h1 {
     font-family: 'Playfair Display', serif;
@@ -525,7 +527,7 @@ h1 span {
 
 /* Contenido de Texto dentro de la tarjeta */
 .service-card-info {
-    padding: 30px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -538,7 +540,80 @@ h1 span {
     color: var(--coffee, #4a3427);
     margin: 0;
 }
+/* Ajustes para la tarjeta e info */
+.service-card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
 
+/* Asegurar que la información de la tarjeta distribuya bien el espacio */
+.service-card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Estilo unificado con los botones del sitio */
+.service-btn {
+  display: inline-block;
+  margin-top: 1.25rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(    --coffee, #7e481e); /* Usa tu variable de color principal */
+  color: var(--white, #ffffff);
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.service-btn:hover {
+  background-color: var(--primary-dark, #574208); /* Tu color al pasar el mouse */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Alineación vertical del contenido interno de la tarjeta */
+.service-card-info {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Lista de beneficios */
+.service-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.service-benefits li {
+  display: flex;
+  align-items:center;
+  text-align: left;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-color, #4a4a4a);
+}
+
+/* Estilo del icono del tilde */
+.service-benefits li svg {
+  width: 16px;
+  height: 16px;
+  color: var(--primary, #2d5a27); /* Tu color primario */
+  flex-shrink: 0;
+}
+
+/* Empujar el botón hacia la parte inferior para alineación uniforme */
+.service-card-info .service-btn {
+  margin-top: auto;
+}
 
 .icon-circle {
     width: 70px;
@@ -1155,7 +1230,9 @@ details p {
     h1 { 
         font-size: 4rem; 
     }
+   
 
+  
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1941,4 +2018,17 @@ details p {
   .nav-list.is-active {
     display: flex !important;
   }
+
+  .hero-text {
+    display: none;
+  }
+
+  
+.hero-content {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    z-index: 10;
+}
+
 }
